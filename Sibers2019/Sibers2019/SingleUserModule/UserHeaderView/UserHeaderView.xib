@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="UserHeaderView" customModule="sibers_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-79-gqt">
+                    <rect key="frame" x="124" y="0.0" width="251" height="215"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-K9-sYp">
+                            <rect key="frame" x="0.0" y="0.0" width="251" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGc-SA-NEe">
+                            <rect key="frame" x="0.0" y="54" width="251" height="53.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uat-C0-fb0">
+                            <rect key="frame" x="0.0" y="107.5" width="251" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiQ-Ze-81K">
+                            <rect key="frame" x="0.0" y="161.5" width="251" height="53.5"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" title="Open in Github" image="github-logo">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedGithubButton" destination="iN0-l3-epB" eventType="touchUpInside" id="sUi-Sw-lBl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SiQ-Ze-81K" firstAttribute="top" secondItem="Uat-C0-fb0" secondAttribute="bottom" id="92c-cI-OPC"/>
+                        <constraint firstItem="SiQ-Ze-81K" firstAttribute="height" secondItem="Uat-C0-fb0" secondAttribute="height" id="92g-JY-kST"/>
+                        <constraint firstItem="SiQ-Ze-81K" firstAttribute="leading" secondItem="q2z-79-gqt" secondAttribute="leading" id="SYY-pV-NLw"/>
+                        <constraint firstAttribute="trailing" secondItem="SiQ-Ze-81K" secondAttribute="trailing" id="T5o-72-eh4"/>
+                        <constraint firstItem="Uat-C0-fb0" firstAttribute="leading" secondItem="q2z-79-gqt" secondAttribute="leading" id="Zir-ek-cgv"/>
+                        <constraint firstItem="Uat-C0-fb0" firstAttribute="height" secondItem="jtN-K9-sYp" secondAttribute="height" id="ZrE-SB-jmc"/>
+                        <constraint firstAttribute="trailing" secondItem="rGc-SA-NEe" secondAttribute="trailing" id="dlm-fZ-0j3"/>
+                        <constraint firstAttribute="bottom" secondItem="SiQ-Ze-81K" secondAttribute="bottom" id="jJ4-G1-UXp"/>
+                        <constraint firstAttribute="trailing" secondItem="jtN-K9-sYp" secondAttribute="trailing" id="ltO-ot-1RH"/>
+                        <constraint firstItem="rGc-SA-NEe" firstAttribute="top" secondItem="jtN-K9-sYp" secondAttribute="bottom" id="s5j-WE-wMt"/>
+                        <constraint firstItem="rGc-SA-NEe" firstAttribute="leading" secondItem="q2z-79-gqt" secondAttribute="leading" id="sl7-5a-ZHC"/>
+                        <constraint firstItem="jtN-K9-sYp" firstAttribute="top" secondItem="q2z-79-gqt" secondAttribute="top" id="uVw-f8-aeX"/>
+                        <constraint firstItem="rGc-SA-NEe" firstAttribute="height" secondItem="jtN-K9-sYp" secondAttribute="height" id="vq7-9W-nFd"/>
+                        <constraint firstAttribute="trailing" secondItem="Uat-C0-fb0" secondAttribute="trailing" id="wbJ-vq-Ea8"/>
+                        <constraint firstItem="jtN-K9-sYp" firstAttribute="leading" secondItem="q2z-79-gqt" secondAttribute="leading" id="wzi-3d-DIi"/>
+                        <constraint firstItem="Uat-C0-fb0" firstAttribute="top" secondItem="rGc-SA-NEe" secondAttribute="bottom" id="zsz-dS-81Q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spK-Zi-eDN" customClass="DownloadableImage" customModule="sibers_test" customModuleProvider="target">
+                    <rect key="frame" x="10" y="10" width="84" height="84"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="spK-Zi-eDN" secondAttribute="height" multiplier="1:1" id="10K-Ih-wPn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q2z-79-gqt" firstAttribute="leading" secondItem="spK-Zi-eDN" secondAttribute="trailing" constant="30" id="0e9-nv-ra0"/>
+                <constraint firstItem="spK-Zi-eDN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3nZ-Iv-FdC"/>
+                <constraint firstAttribute="bottom" secondItem="q2z-79-gqt" secondAttribute="bottom" id="JYy-VR-X4Q"/>
+                <constraint firstItem="q2z-79-gqt" firstAttribute="width" secondItem="spK-Zi-eDN" secondAttribute="width" multiplier="3:1" id="WFz-dE-WyE"/>
+                <constraint firstAttribute="trailing" secondItem="q2z-79-gqt" secondAttribute="trailing" id="aI0-dY-zvf"/>
+                <constraint firstItem="spK-Zi-eDN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="mOg-uY-70w"/>
+                <constraint firstItem="q2z-79-gqt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xzb-YU-mGa"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="spK-Zi-eDN" id="bG6-Nb-9rm"/>
+                <outlet property="githubButton" destination="SiQ-Ze-81K" id="xwr-hK-R3L"/>
+                <outlet property="loginLabel" destination="jtN-K9-sYp" id="6Km-jc-1lE"/>
+                <outlet property="nameLabel" destination="rGc-SA-NEe" id="dhd-sr-uyi"/>
+                <outlet property="repositoriesLabel" destination="Uat-C0-fb0" id="FMO-c0-JZr"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-49.025487256371818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="github-logo" width="48" height="48"/>
+    </resources>
+</document>

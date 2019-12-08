@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'Sibers2019' do
+  use_frameworks!
+
+  pod 'KRPullLoader', '1.3.0'
+
+end
